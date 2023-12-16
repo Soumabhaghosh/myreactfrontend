@@ -333,7 +333,7 @@ textarea.tall-textarea {
   left: 20px;
   width: 290px;
   height: 350px;
-  background-color: rgb(245, 217, 56);
+  background-color: rgb(187, 199, 176);
   display: flex;
   flex-direction: column;
   opacity: 0;
@@ -347,7 +347,7 @@ textarea.tall-textarea {
 }
 
 .chat-title-bar {
-  background-color: #e02020;
+  background-color: #126df7;
   color: rgb(253, 250, 250);
   padding: 4px 7px;
   display: flex;
