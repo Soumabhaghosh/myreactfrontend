@@ -9,20 +9,7 @@ function Footer() {
           Home
         </Link>{" "}
         |{" "}
-        <Link className="mx-1" to="/about-us">
-          About Us
-        </Link>{" "}
-        |{" "}
-        <Link className="mx-1" to="/terms">
-          Terms
-        </Link>
-      </p>
-      <p className="m-0">
-        Copyright &copy; 2020{" "}
-        <a href="/" className="text-muted">
-          ComplexApp
-        </a>
-        . All rights reserved.
+       
       </p>
     </footer>
   )
