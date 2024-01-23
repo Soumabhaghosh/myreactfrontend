@@ -5,7 +5,7 @@ import { useImmerReducer } from "use-immer"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { CSSTransition } from "react-transition-group"
 import Axios from "axios"
-Axios.defaults.baseURL = "https://mybackendformyreactapp12.vercel.app"
+Axios.defaults.baseURL = "https://mybackendmy.onrender.com/"
 
 
 import StateContext from "./StateContext"
