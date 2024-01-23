@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "memobook-4a0b4"
-  }
+    "default": "memobook1-e597d",
+    "memobook1": "memobook1-e597d"
+  },
+  "targets": {},
+  "etags": {}
 }

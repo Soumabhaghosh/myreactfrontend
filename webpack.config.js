@@ -81,6 +81,7 @@ if (currentTask == "webpackBuild") {
     filename: "[name].[chunkhash].js",
     chunkFilename: "[name].[chunkhash].js",
   }
+  
 }
 
 module.exports = config
