@@ -1,4 +1,4 @@
-# Social Media App
+# Memobook
 
 ![Screenshot 2023-05-17 at 7 14 42 PM](./app.png)
 
