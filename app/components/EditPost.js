@@ -145,7 +145,7 @@ function EditPost() {
                 try {
                     const response= await Axios.post(`/post/${state.id}/edit`,{title:state.title.value ,body:state.body.value,token:appState.user.token },{cancelToken: ourRequest.token})
                     dispatch({type:"saveRequestFinished"})
-                    appDispatch({type:"flashMessage",value:"post updated"})
+                    appDispatch({type:"flashMessage",value:"post updated",isPos:"success"})
                     
                 } catch (e) {
                     console.log(e);
