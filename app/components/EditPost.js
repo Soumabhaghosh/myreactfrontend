@@ -64,14 +64,14 @@ function EditPost() {
             case "titleRules":
                 if(!action.value.trim()){
                     draft.title.hasErrors=true
-                    draft.title.message="bal ta"
+                    draft.title.message="Title can not be empty"
                 }  
                 
                 return
             case "bodyRules":
                 if(!action.value.trim()){
                     draft.body.hasErrors=true
-                    draft.body.message="bal ta"
+                    draft.body.message="Body can not be empty"
                 }  
                 
                 return
