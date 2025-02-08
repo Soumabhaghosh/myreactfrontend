@@ -30,7 +30,7 @@ const [state,setState]= useImmer({
     },[appState.isChatOpen])
 
     useEffect(()=>{
-     socket.current =io("https://backend-f69l5.kinsta.app/")
+     socket.current =io("https://mybackendmy.onrender.com")
 
         socket.current.on("chatFromServer",message=>{
            setState(draft=>{
