@@ -14,7 +14,7 @@ function CreatePost(props) {
   const appState = useContext(StateContext)
 
   const [image, setImage] = useState(null);
-  const [uploadProgress, setUploadProgress] = useState(0);
+  const [uploading, setUploading] = useState(false);
   const [previewUrl, setPreviewUrl] = useState('');
   const fileInputRef = useRef(null);
 
@@ -46,14 +46,9 @@ function CreatePost(props) {
 
 
     try {
+      setUploading(true)
       const response = await Axios.post("/create-post", formData, {
-        headers: { "Content-Type": "multipart/form-data" },
-        onUploadProgress: (progressEvent) => {
-          const percentCompleted = Math.round(
-            (progressEvent.loaded * 100) / progressEvent.total
-          );
-          setUploadProgress(percentCompleted);
-        }
+        headers: { "Content-Type": "multipart/form-data" }
       })
       appDispatch({ type: "flashMessage", value: "Congrats you Successfully created a post", isPos: "info" })
 
@@ -88,7 +83,7 @@ function CreatePost(props) {
           <input type="file" accept="image/*" onChange={handleImageChange} />
         </div>
 
-        <button className="btn btn-primary">Save New Post</button>
+        {uploading?<button className="btn btn-primary" disabled={true} >Saving...</button>:<button className="btn btn-primary">Save New Post</button>}
         {previewUrl ? (
         <div style={{ margin: '20px 0' }}>
           <img
